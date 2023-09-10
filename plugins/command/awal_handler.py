@@ -15,7 +15,7 @@ async def start_handler(client: Client, msg: types.Message):
     username = (
         f'@{msg.from_user.username}'
         if msg.from_user.username
-        else '@OwnNeko'
+        else '@Nocturnalonebeing'
     )
     mention = msg.from_user.mention
     await msg.reply_text(
@@ -108,7 +108,7 @@ async def gagal_kirim_handler(client: Client, msg: types.Message):
     username = (
         f'@{msg.from_user.username}'
         if msg.from_user.username
-        else '@OwnNeko'
+        else '@Nocturnalonebeing'
     )
     mention = msg.from_user.mention
     return await msg.reply(config.gagalkirim_msg.format(
@@ -126,7 +126,7 @@ async def help_handler(client, msg):
 
     pesan = "Supported commands\n" + '/status — melihat status\n'
     pesan += '/talent — melihat talent\n'
-    pesan += '#NekoBoy / #NekoGirl untuk Mencari Pasangan,Teman , Partner dll #NekoAsk untuk Bertanya #NekoStory untuk Berbagi Cerita #NekoSpill untuk Spill Masalah #NekoFind untuk Mencari Pasangan, Teman, Partner dll'
+    pesan += '#FWBBoy / #FWBGirl untuk Mencari Pasangan,Teman , Partner dll #FWBAsk untuk Bertanya #FWBStory untuk Berbagi Cerita #FWBSpill untuk Spill Masalah #FWBFind untuk Mencari Pasangan, Teman, Partner dll'
 
     # Tambahkan InlineKeyboardButton "JASA" di sini
     keyboard = [
